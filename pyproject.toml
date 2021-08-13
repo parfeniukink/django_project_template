@@ -1,9 +1,12 @@
-[[source]]
-url = "https://pypi.org/simple"
-verify_ssl = true
-name = "pypi"
+[tool.poetry]
+name = "djano_project_template"
+version = "0.1.0"
+description = "Django project template"
+authors = ["Dmytro Parfeniuk"]
+license = "MIT"
 
-[packages]
+[tool.poetry.dependencies]
+python = "^3.9"
 Django = "==3.1.4"
 django-environ = "==0.4.5"
 django-cors-headers = "==3.5.0"
@@ -24,19 +27,17 @@ gunicorn = "==20.0.4"
 boto3 = "==1.16.56"
 djoser = "==2.1.0"
 
-[dev-packages]
-flake8 = "*"
+[tool.poetry.dev-dependencies]
 flake8-isort = "==4.0.0"
 black = "==20.8b1"
-django-stubs = "*"
 pytest-django = "==4.0.0"
 pytest-mock = "==3.5.1"
 pytest-cov = "==2.11.0"
-django-coverage-plugin = "*"
 mixer = "==7.1.2"
-django-extensions = "==3.1.1"
 ptvsd = "==4.3.2"
 rope = "==0.18.0"
+django-extensions = "==3.1.1"
 
-[requires]
-python_version = "3.9"
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

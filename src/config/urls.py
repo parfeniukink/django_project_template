@@ -2,10 +2,13 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import include, path
 
-v1 = []
+v1 = [
+    # path("posts/", post.view),
+]
 
 api = [
     path("v1/", include(v1)),
+    path("v2/", include(v1)),
 ]
 
 urlpatterns = [

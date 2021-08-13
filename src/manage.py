@@ -7,7 +7,7 @@ if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
 
     # Accept ptvsd debug
-    from django.conf import settings
+    from django.conf import settings  # noqa
 
     # if settings.DEBUG and settings.DJANGO_USE_DOCKER:
     #     if os.environ.get("RUN_MAIN") or os.environ.get("WERKZEUG_RUN_MAIN"):
