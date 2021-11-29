@@ -20,7 +20,7 @@ LOCAL_APPS = ["apps.authentication.apps.AuthenticationConfig"]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
-DEVELOPMENT_APPS = ["django_extensions"]
 
 if DEBUG:
+    DEVELOPMENT_APPS = ["django_extensions"]
     INSTALLED_APPS += DEVELOPMENT_APPS
