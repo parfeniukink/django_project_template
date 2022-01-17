@@ -5,7 +5,7 @@ from .views import TestAPI
 
 app_name = "authentication"
 
-# Djoser viewset displatch
+# Djoser viewset dispatch
 # https://github.com/sunscrapers/djoser/blob/master/djoser/views.py
 SignUpAPIView = UserViewSet.as_view({"post": "create"})
 
